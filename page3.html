@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 1 Year ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', cursive;
+  background: radial-gradient(circle at top, #ffb3c6, #ff4d6d, #a4133c);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: absolute;
+  color: rgba(255,255,255,0.7);
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0.6); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1.4); opacity: 0; }
+}
+
+/* HEADING */
+.main-heading {
+  position: absolute;
+  top: 40px;
+  font-size: 48px;
+  text-shadow: 0 0 30px rgba(255,255,255,1);
+  z-index: 2;
+}
+
+/* ENVELOPE */
+.envelope {
+  width: 340px;
+  height: 230px;
+  background: #fff;
+  border-radius: 14px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 45px rgba(255,255,255,0.9);
+  text-align: center;
+  padding-top: 95px;
+  color: #c9184a;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+.envelope:hover {
+  transform: scale(1.05);
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  background: #ffe6eb;
+  clip-path: polygon(0 0, 50% 70%, 100% 0);
+}
+
+/* LETTER */
+.letter {
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #c9184a;
+  width: 75%;
+  max-width: 720px;
+  max-height: 70vh;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 0 80px rgba(255,255,255,0.95);
+  overflow-y: auto;
+  z-index: 3;
+  animation: rise 0.6s ease-out;
+}
+
+@keyframes rise {
+  from { transform: translateY(80px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.letter h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.letter p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* CLOSE BUTTON */
+.close {
+  position: sticky;
+  top: 0;
+  background: #c9184a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  float: right;
+  cursor: pointer;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- AUTO PLAY MUSIC -->
+<audio id="bgMusic" autoplay loop muted>
+  <source src="D:\Mann Mera - Official Video  Table No 21  Rajeev Khandelwal & Tina Desai  Gajendra Verma - Sony Music India (mp3cut.net).mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE HEADING -->
+<div class="main-heading">Happy 1 Year Shona 💖</div>
+
+<!-- ENVELOPE -->
+<div class="envelope" onclick="openLetter()">
+  💌 Something’s inside<br>Click to see
+</div>
+
+<!-- LETTER -->
+<div class="letter" id="letter">
+  <div class="close" onclick="closeLetter()">Close ✖</div>
+
+  <h2>My Love ❤️</h2>
+
+  <p>
+    Happy 1 Year Laavanya Joshi, My love.  
+    <br><br>
+    One year ago this very day I saw you. I cant forget that day. One of the most amazing and special day it was in my life.
+    We had our nmat exam, but i didnt care. I was more focused on meeting you. I know I bought a new jacket and didnt wear it at all 
+    and then I wore those new clothes to look good in front of you. I was scared ke kahi tum mujhe dekh ke pasand na karo.
+    <br><br>
+    I wanted to meet you the day we started talking to charm you to make you mine hug you kiss you and make you feel the most special girl.
+    We from the day we started talking till this day an ever ago I waited for you just to give you a hug and love you in person. 
+    That day when you went home I was so angryy because I didnt care about the exam, I came just to see you and meet you. 
+    I came with the plan ke aaj toh isse permanent karke jaunga but you left and mujhe khud pe gussa aa raha tha but 
+    then you came we went to colocal, just had a one coffee and had ending talking and
+    <br><br>
+    How can I forget that walk towards you outside colocal, giving you a cute kiss I dont know why I did that all I know that it came natural. 
+    Mai apko apna mann chuka tha in that waiting period and it just came and thank you for not slapping me for doing that.
+    <br><br>
+    I was so scared after doing it because I realized what I did after I did and I was like fuck kardiya kshitijjj 
+    From that day to today exactly 1 year after, I am still like this ke fuck kardiya kshitij and you are still like I love you kshitij.
+    This 1 year made us through lots of ups and downs and kept us together. We stuck with each other. 
+    Us from fighting like dogs and cats to meeting our parents and loved by them. I can never thought of doing this with anyone but you 
+    You made me who I'm and I'm the happiest with who im. i can proudly say that im my woman's man and she has all the rights to me.
+    <br><br>
+    thank you so much for loving me, thank you so much for entertaining my stupidness, thank you so much for keeping me close to you.
+    It us against the world jaan and like this one year I would want to spend the rest of the years with you.
+    <br><br>
+    Happy 1 yr anniversary my bobo, my shona, my baby, my angry bird. 
+     I love you the mosttt.
+    <br><br> 
+    Always yours ❤️
+  </p>
+</div>
+
+<script>
+/* MUSIC AUTOPLAY FIX */
+const music = document.getElementById("bgMusic");
+
+window.addEventListener("load", () => {
+  music.play().catch(() => {});
+});
+
+document.addEventListener("click", () => {
+  music.muted = false;
+  music.play();
+}, { once: true });
+
+/* ENVELOPE ACTIONS */
+function openLetter() {
+  document.querySelector(".envelope").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+}
+
+function closeLetter() {
+  document.getElementById("letter").style.display = "none";
+  document.querySelector(".envelope").style.display = "block";
+}
+
+/* FLOATING HEARTS */
+for (let i = 0; i < 75; i++) {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.innerHTML = "❤";
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.fontSize = (18 + Math.random() * 34) + "px";
+  h.style.animationDuration = (4 + Math.random() * 7) + "s";
+  document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
